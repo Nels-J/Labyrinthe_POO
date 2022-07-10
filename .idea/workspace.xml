@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c336654-25ff-474f-b69a-3737a3e6c064" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CMaze_TU.java" afterDir="false" />
+    <list default="true" id="0c336654-25ff-474f-b69a-3737a3e6c064" name="Changes" comment="feat: new class added CMaze for unit testing purpose">
       <change afterPath="$PROJECT_DIR$/src/CPlayer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/CPlayer_TU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -78,8 +76,16 @@
       <option name="presentableId" value="Default" />
       <updated>1657380646137</updated>
       <workItem from="1657380648095" duration="11645000" />
-      <workItem from="1657455800696" duration="17888000" />
+      <workItem from="1657455800696" duration="18360000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: new class added CMaze for unit testing purpose">
+      <created>1657475651556</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657475651557</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +113,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: new class added CMaze for unit testing purpose" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: new class added CMaze for unit testing purpose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
