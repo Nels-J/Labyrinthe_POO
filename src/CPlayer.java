@@ -26,6 +26,10 @@ public class CPlayer {
     // ------------ GETTER(s) & SETTER(s) ------------ //
 
 
+    public CPoint getPosition() {
+        return position;
+    }
+
     // ------------------ METHOD(s) ------------------ //
     public CPoint moveNext(){
         // state definition
@@ -37,38 +41,9 @@ public class CPlayer {
 
         // state actions
         switch (this.fsmState){
-            // LEFT
-            case 0:
-                this.proposedPosition.x = this.position.x-1;
-                this.proposedPosition.y = this.position.y;
-                if(checkPreviousPosition(this.proposedPosition)){
-                    fsmState++;
-                }else{
-                    break;
-                }
-
-            // UP
-            case 1:
-                this.proposedPosition.x = this.position.x;
-                this.proposedPosition.y = this.position.y-1;
-                if(checkPreviousPosition(this.proposedPosition)){
-                    fsmState++;
-                }else {
-                    break;
-                }
-
-           // RIGHT
-            case 2:
-                this.proposedPosition.x = this.position.x+1;
-                this.proposedPosition.y = this.position.y;
-                if(checkPreviousPosition(this.proposedPosition)){
-                    fsmState++;
-                }else {
-                    break;
-                }
 
             // DOWN
-            case 3:
+            case 0:
                 this.proposedPosition.x = this.position.x;
                 this.proposedPosition.y = this.position.y+1;
                 if(checkPreviousPosition(this.proposedPosition)){
@@ -77,16 +52,48 @@ public class CPlayer {
                     break;
                 }
 
+            // RIGHT
+            case 1:
+                this.proposedPosition.x = this.position.x+1;
+                this.proposedPosition.y = this.position.y;
+                if(checkPreviousPosition(this.proposedPosition)){
+                    fsmState++;
+                }else {
+                    break;
+                }
+
+            // UP
+            case 2:
+                this.proposedPosition.x = this.position.x;
+                this.proposedPosition.y = this.position.y-1;
+                if(checkPreviousPosition(this.proposedPosition)){
+                    fsmState++;
+                }else {
+                    break;
+                }
+
+           // LEFT
+            case 3:
+                this.proposedPosition.x = this.position.x-1;
+                this.proposedPosition.y = this.position.y;
+                if(checkPreviousPosition(this.proposedPosition)){
+                    fsmState++;
+                }else{
+                    break;
+                }
+
             default:
                 System.out.println("CPLAYER error in fsm switch");
                 this.proposedPosition.x = this.position.x;
                 this.proposedPosition.y = this.position.y;
+                fsmState = 0;
                 break;
         }
 
         this.boolMoveAccepted = false;
 
         return this.proposedPosition;
+
     }
 
     private boolean checkPreviousPosition(CPoint position){
@@ -101,6 +108,7 @@ public class CPlayer {
             return false;
         }
     }
+
     public void moveAccepted(boolean status){
         if(status == true) {
             this.position.x = this.proposedPosition.x;
@@ -113,6 +121,5 @@ public class CPlayer {
     public void display(){
         System.out.println("Actual position: " + this.position);
     }
-
 
 }

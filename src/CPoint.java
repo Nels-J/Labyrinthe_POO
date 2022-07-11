@@ -10,6 +10,13 @@ public class CPoint {
         this.y = y;
     }
 
+    // copy constructor
+    public CPoint(CPoint point)
+    {
+        this.x = point.x;
+        this.y = point.y;
+    }
+
     // ---------------- CONSTRUCTOR(s) --------------- //
 
 

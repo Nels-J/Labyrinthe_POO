@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
-public class Main {
+public class Main2 {
 
     public static void main(String[] args) {
-        System.out.println("Welcome on the Maze!");
+        System.out.println("Welcome on the Maze2!");
 
         CPoint startPosition = new CPoint(0,0);
         CPoint goalPosition = new CPoint(4,2);
@@ -25,21 +25,14 @@ public class Main {
 
         CMaze maze = new CMaze(7,6, startPosition, goalPosition, walls);
         maze.display();
-        CPlayer player1 = new CPlayer(startPosition);
+        CExplorer expl1 = new CExplorer(maze);
 
         int cpt = 0;
-        while ((!maze.isGoalReached(player1.getPosition()))
-                && cpt < 50){
-            CPoint pos = player1.moveNext();
-            if (maze.isPositionFree(pos)){
-                player1.moveAccepted(true);
-                player1.display();
-            }else{
-                player1.moveAccepted(false);
-            }
+        while (expl1.execute() == true){
             cpt++;
+            System.out.println("Compteur:" + cpt);
         }
         System.out.println("Goal Reached !");
-        player1.display();
+        expl1.displayShortPath();
     }
 }

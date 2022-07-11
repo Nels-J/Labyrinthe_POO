@@ -31,7 +31,7 @@ public class CMaze {
     // ------------------ METHOD(s) ------------------ //
 
     public boolean isGoalReached(CPoint point){
-        if(this.goalPosition == point)
+        if(this.goalPosition.equals(point))
             return true;
         else
             return false;
@@ -50,7 +50,7 @@ public class CMaze {
 
         // check walls
         for (CPoint wall:this.walls) {
-            if((wall.x == point.x) && (wall.y == point.y))
+            if(wall.equals(point))
                 return false;
         }
         return true;

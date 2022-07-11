@@ -17,7 +17,9 @@ public class CMaze_TU {
         System.out.println("CMaze_TU");
 
         CPoint startPosition = new CPoint(0,0);
+        CPoint startPosition2 = new CPoint(0,0);
         CPoint goalPosition = new CPoint(4,2);
+        CPoint goalPosition2 = new CPoint(4,2);
 
         ArrayList<CPoint> walls = new ArrayList<CPoint>();
         walls.add(new CPoint(1,0));
@@ -40,13 +42,13 @@ public class CMaze_TU {
 
 
         // Mini Test
-        if(maze.isGoalReached(startPosition)==false){
+        if(maze.isGoalReached(startPosition2)==false){
             System.out.println("maze.isGoalReached STEP 1.1: OK");
         }else{
             System.out.println("maze.isGoalReached STEP 1.1: NOK");
         }
 
-        if(maze.isGoalReached(goalPosition)==true){
+        if(maze.isGoalReached(goalPosition2)==true){
             System.out.println("maze.isGoalReached STEP 1.2: OK");
         }else{
             System.out.println("maze.isGoalReached STEP 1.2: NOK");

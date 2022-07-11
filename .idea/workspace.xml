@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c336654-25ff-474f-b69a-3737a3e6c064" name="Changes" comment="feat: new class added CMaze for unit testing purpose">
-      <change afterPath="$PROJECT_DIR$/src/CPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CPlayer_TU.java" afterDir="false" />
+    <list default="true" id="0c336654-25ff-474f-b69a-3737a3e6c064" name="Changes" comment="feat: unit tests moved to the appropriate class">
+      <change afterPath="$PROJECT_DIR$/src/CExplorer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CExplorer_TU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CMaze_TU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMaze_TU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -15,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,7 +44,14 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CPlayer_TU">
+  <component name="RunManager" selected="Application.Maze2">
+    <configuration name="CExplorer_TU" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="CExplorer_TU" />
+      <module name="Labyrinthe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CMaze_TU" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="CMaze_TU" />
       <module name="Labyrinthe" />
@@ -61,8 +73,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Maze2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main2" />
+      <module name="Labyrinthe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Maze" />
+      <item itemvalue="Application.CExplorer_TU" />
+      <item itemvalue="Application.Maze2" />
       <item itemvalue="Application.CMaze_TU" />
       <item itemvalue="Application.CPlayer_TU" />
     </list>
@@ -76,7 +97,10 @@
       <option name="presentableId" value="Default" />
       <updated>1657380646137</updated>
       <workItem from="1657380648095" duration="11645000" />
-      <workItem from="1657455800696" duration="18360000" />
+      <workItem from="1657455800696" duration="19007000" />
+      <workItem from="1657498152750" duration="31000" />
+      <workItem from="1657498578502" duration="550000" />
+      <workItem from="1657523517559" duration="16898000" />
     </task>
     <task id="LOCAL-00001" summary="feat: new class added CMaze for unit testing purpose">
       <created>1657475651556</created>
@@ -85,7 +109,35 @@
       <option name="project" value="LOCAL" />
       <updated>1657475651557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: new class CPlayer">
+      <created>1657475840915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657475840915</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: new class CPlayer_TU for unit testing purpose on CPlayer class">
+      <created>1657475893849</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657475893849</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: override methods added for display + for equality object comparison">
+      <created>1657476019702</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657476019702</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: unit tests moved to the appropriate class">
+      <created>1657476269845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657476269845</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +168,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: new class added CMaze for unit testing purpose" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: new class added CMaze for unit testing purpose" />
+    <MESSAGE value="feat: new class CPlayer" />
+    <MESSAGE value="feat: new class CPlayer_TU for unit testing purpose on CPlayer class" />
+    <MESSAGE value="feat: override methods added for display + for equality object comparison" />
+    <MESSAGE value="feat: unit tests moved to the appropriate class" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: unit tests moved to the appropriate class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -126,14 +182,16 @@
           <line>107</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CExplorer_TU.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="this.ariane.size()-2" language="JAVA" />
-        <watch expression="this.ariane.get(this.ariane.size() - 2)" language="JAVA" />
-        <watch expression="position.equals(this.ariane.get(this.ariane.size() - 2));" language="JAVA" />
-        <watch expression="p1.equals(p2);" language="JAVA" />
+        <watch expression="((CExplorer)this).discoveryList" custom="CExplorer" />
       </configuration>
     </watches-manager>
   </component>
